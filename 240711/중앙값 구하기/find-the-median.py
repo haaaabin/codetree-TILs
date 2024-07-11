@@ -4,7 +4,7 @@ if a >= b:
     if b >= c:
         print(b)
     else:
-        print(a)
+        print(c)
 else:
     if a >= c:
         print(a)
