@@ -1,8 +1,8 @@
 a,b = map(int,input().split())
 
-if a < 90:
-    print(0)
-elif b >= 95 or b <= 100:
-    print(100000)
-else:
+if a >= 90 and b >= 95:
+    print(1000000)
+elif a >= 90 and b >= 90:
     print(50000)
+else:
+    print(0)
