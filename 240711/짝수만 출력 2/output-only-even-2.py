@@ -1,5 +1,4 @@
 a,b = map(int,input().split())
-i = a
-while i >= 10:
-    print(i, end =" ")
-    i -= 2
+while a >= b :
+    print(a, end =" ")
+    a -= 2
