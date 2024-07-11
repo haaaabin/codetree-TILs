@@ -7,6 +7,6 @@ if a >= b:
         print(a)
 else:
     if a >= c:
-        print(c)
+        print(a)
     else:
         print(b)
