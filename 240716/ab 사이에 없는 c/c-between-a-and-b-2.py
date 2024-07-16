@@ -2,9 +2,9 @@ a,b,c = map(int,input().split())
 satisfied = True
 
 for i in range(a, b+1):
-    if c % i != 0:
+    if i % c == 0:
         satisfied = False
-if satisfied == False:
+if satisfied == True:
     print("YES")
 else:
     print("NO")
