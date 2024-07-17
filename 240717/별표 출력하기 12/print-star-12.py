@@ -1,9 +1,16 @@
+# 변수 선언 및 입력
 n = int(input())
 
-for i in range(1, n+1):
-    for j in range(1, n+1):
-        if i == 1 or j == 1 or j % 2 == 0:
-            print("*", end= " ")
+for i in range(n):
+    for j in range(n):
+        if j % 2 == 0:
+            if i == 0:
+                print("* ", end="")
+            else:
+                print("  ", end="")
         else:
-            print(" ", end="")
+            if i <= j:
+                print("* ", end="")
+            else:
+                print("  ", end="")
     print()
