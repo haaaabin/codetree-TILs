@@ -8,4 +8,5 @@ for i in arr:
     sum_val += i
     cnt += 1
 
-print(f"{sum_val} {(sum_val/cnt).f}")
+avg = sum_val/cnt
+print(f"{sum_val} {avg:.1f}")
