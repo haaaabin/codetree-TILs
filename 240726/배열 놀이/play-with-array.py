@@ -14,5 +14,6 @@ for i in range(q):
     else:
         a = quest[1]
         b = quest[2]
-        print(*(arr[a-1:b:]), end=" ")
+        for i in range(a-1, b):
+            print(arr[i], end=" ")
         print()
