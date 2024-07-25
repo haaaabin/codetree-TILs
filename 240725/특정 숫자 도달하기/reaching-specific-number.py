@@ -8,4 +8,4 @@ for i in arr:
     sum_val += i
     cnt += 1
 
-print(f"{sum_val} {sum_val/cnt}")
+print(f"{sum_val} {sum_val//cnt}")
