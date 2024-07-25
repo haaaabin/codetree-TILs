@@ -7,10 +7,13 @@ for i in range(q):
     if quest[0] == 1:
         a = quest[1]
         print(arr[a-1])
+
     elif quest[0] == 2:
         a = quest[1]
-        if a in arr:
-            print(arr.index(a)+1)
+        idx = -1
+        for a in arr:
+            idx = arr.index(a)
+        print(idx+1)
     else:
         a = quest[1]
         b = quest[2]
