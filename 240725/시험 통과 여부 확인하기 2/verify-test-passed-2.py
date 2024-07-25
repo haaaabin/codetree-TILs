@@ -8,5 +8,7 @@ for i in range(n):
     if average >= 60:
         print("pass")    
         cnt +=1
+    else:
+        print("fail")
 
 print(cnt)
