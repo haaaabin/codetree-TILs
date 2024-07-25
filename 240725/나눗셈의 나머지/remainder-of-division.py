@@ -1,9 +1,9 @@
 a,b = map(int,input().split())
-temp = [0] * a
+temp = [0] * b
 while True:
     temp[a%b] += 1
     a = a // b
-    if a == 0:
+    if a < 1:
         break
 
 sum_val = 0
