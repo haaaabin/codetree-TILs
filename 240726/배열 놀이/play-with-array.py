@@ -1,7 +1,8 @@
 n , q = tuple(map(int,input().split()))
+
 arr = list(map(int,input().split()))
 
-for i in range(q):
+for _ in range(q):
     quest = list(map(int,input().split()))
 
     if quest[0] == 1:
@@ -14,6 +15,7 @@ for i in range(q):
         for a in arr:
             idx = arr.index(a)
         print(idx+1)
+
     else:
         a = quest[1]
         b = quest[2]
