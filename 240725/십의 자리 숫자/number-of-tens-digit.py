@@ -3,6 +3,8 @@ nums = list(map(int,input().split()))
 temp = [0] * 101
 
 for num in nums:
+    if num == 0:
+        break
     k = num // 10
     temp[k] += 1
 
