@@ -1,14 +1,7 @@
 n , m = map(int,input().split())
 temp1 = [list(map(int,input().split())) for _ in range(n)]
 temp2 = [list(map(int,input().split())) for _ in range(n)]
-temp3 = [[0 for _ in range(m)] for _ in range(n)]
-
-for i in range(n):
-    for j in range(m):
-        if temp1[i][j] == temp2[i][j]:
-            temp3[i][j] = 0
-        else:
-            temp3[i][j] = 1
+temp3 = [[1 if temp1[i][j] != temp2[i][j] else 0 for j in range(m)] for i in range(n)]
 
 for row in temp3:
     for elem in row:
