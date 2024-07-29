@@ -1,6 +1,6 @@
 n , m = map(int,input().split())
-temp1 = [list(map(int,input().split())) for _ in range(m)]
-temp2 = [list(map(int,input().split())) for _ in range(m)]
+temp1 = [list(map(int,input().split())) for _ in range(n)]
+temp2 = [list(map(int,input().split())) for _ in range(n)]
 temp3 = [[0 for _ in range(m)] for _ in range(n)]
 
 for i in range(n):
