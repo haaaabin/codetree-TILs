@@ -1,12 +1,12 @@
 n = int(input())
+string = [ input() for _ in range(n)]
+
 cnt = 0
 len_val = 0
 
 for i in range(n):
-    text = input()
-    len_val += len(text)
-    for i in text:
-        if i == 'a':
-            cnt += 1
-
+    len_val += len(string[i])
+    if string[i][0] == 'a':
+        cnt += 1
+        
 print(len_val, cnt)
