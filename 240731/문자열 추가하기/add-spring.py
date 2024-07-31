@@ -1,3 +1,3 @@
 string = input()
-tot_str = "".join(string)
-print(tot_str + "Hello")
+string += "Hello"
+print(string)
